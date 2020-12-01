@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>A/C fast settings</title>
+
+   <link rel="preload" href="./font/Gilroy.woff" as="font">
+   <link rel="stylesheet" href="gilroy-font.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="global.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="front-panel.css">
+   <link rel="stylesheet" href="blue-button.css">
+
+
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.css" />
+   <link rel="stylesheet" href="rs-control.css">
+   <link rel="stylesheet" href="marks.css">
+   <link rel="stylesheet" href="irs-line.css">
+</head>
+
+<body class="body">
+   <div class="back-panel"></div>
+   <div class="front-panel">
+      <div class="front-panel__dinamic"></div>
+      <div class="front-panel__top-power">
+         <div class="front-panel__title">
+            <h1 class="front-panel__top-text">A/C is ON</h1>
+            <p class="front-panel__bottom-text">
+               <span>Currently 27 °C</span>
+               <span>Will change in 2min</span>
+            </p>
+         </div>
+         <button class="blue-button blue-button--on"></button>
+      </div>
+      <div class="front-panel__radius-range">
+         <input type="range" id="myRange">
+         <ul class="marks list-reset">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+
+      <div class="fan-speed">
+         <div class="fan-speed__title">Fan speed</div>
+         <div class="fan-speed__range">
+            <ul class="irs-numbers list-reset">
+               <li>1</li>
+               <li>2</li>
+               <li>3</li>
+               <li>4</li>
+               <li>5</li>
+            </ul>
+            <input type="text" class="js-range-slider" name="my_range" value="" />
+         </div>
+      </div>
+
+      <div class="mode">
+         <h3 class="mode__title">Mode</h3>
+         <div class="mode__wrap">
+            <div class="mode__auto">
+               <div class="mode__auto--title">Auto</div>
+               <button class="blue-button blue-button--auto"></button>
+            </div>
+            <div class="mode__auto">
+               <div class="mode__auto--title">Dry</div>
+               <button class="blue-button blue-button--dry"></button>
+            </div>
+            <div class="mode__auto">
+               <div class="mode__auto--title">Cool</div>
+               <button class="blue-button blue-button--cool"></button>
+            </div>
+            <div class="mode__auto">
+               <div class="mode__auto--title">Program</div>
+               <button class="blue-button blue-button--program"></button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--jQuery-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.js"></script>
+
+   <!--Plugin JavaScript file-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

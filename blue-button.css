@@ -1,0 +1,84 @@
+.blue-button {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;   
+
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   border: none;
+   background-color: transparent;
+   z-index: 10;
+   box-shadow: -9px -9px 20px 7px #6969692b;
+   cursor: pointer;
+}
+
+.blue-button:hover:before {
+   background: linear-gradient(150.66deg, #2A87D3 14.75%, #1F66A4 45.12%, #113C67 84.81%);
+}
+
+.blue-button:after {
+   content: "";
+   position: absolute;  
+   
+}
+
+.blue-button--on:after {
+   background-image: url("../img/stand-by.svg");
+   
+   width: 20px;
+   height: 20px;
+  
+}
+
+.blue-button--auto:after {
+   content: "A";
+   color: #fff;
+   
+   width: 20px;
+   height: 20px;
+}
+
+.blue-button--dry:after {
+   background-image: url("../img/wave-grey.svg");
+   
+   width: 20px;
+   height: 20px;
+}
+
+.blue-button--cool:after {
+   background-image: url("../img/ice.svg");
+   
+   width: 20px;
+   height: 23px;
+}
+
+.blue-button--program:after {
+   background-image: url("../img/time.svg");
+   
+   width: 19px;
+   height: 23px;
+}
+
+.blue-button::before {
+   content: "";
+   position: absolute;
+   top: 3px;
+   bottom: 3px;
+   left: 3px;
+   right: 3px;
+   border-radius: 50%;
+   
+   background: linear-gradient(320.66deg, #171717 14.75%, #3e4144 84.81%);
+   box-shadow: 9px 17px 20px 7px #00000054;
+   z-index: -2;
+}
+
+.blue-button.on:before {
+   background: linear-gradient(320.66deg, #11A8FD 14.75%, #106290 75.81%);
+}
+
+.blue-button.on {
+   background-image: linear-gradient(320.66deg, #016BB8 14.75%, #11A8FD 84.81%);
+}

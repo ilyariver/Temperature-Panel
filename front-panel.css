@@ -1,0 +1,131 @@
+.front-panel {
+   position: relative;
+
+   padding: 30px;
+
+   min-width: 395px;
+   min-height: 870px;
+   width: 395px;
+   height: 870px;
+   background-image: linear-gradient(180deg, #353A40 0%, #16171B 100%);
+
+   border-radius: 60px;
+}
+
+.front-panel:after {
+   content: "";
+
+   position: absolute;  
+   top: -2px;
+   bottom: -2px;
+   left: -2px;
+   right: -2px;
+
+   background-image: linear-gradient(180deg, #424750 0%, #202326 100%);
+   border-radius: 60px;
+   z-index: -1;
+}
+
+.front-panel__top-power {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 90px;
+}
+
+.front-panel__dinamic {
+   display: flex;
+   justify-content: center;
+
+   position: relative;
+}
+
+.front-panel__dinamic::after {
+   content: "";
+   position: absolute;
+   top: -18px;
+
+   background: rgba(23, 24, 28, 1);
+
+   height: 4px;
+   width: 60px;
+}
+
+.front-panel__top-text {
+   margin: 0 0 8px 0;
+   font-size: 24px;
+   font-weight: 900;
+   color: rgba(255, 255, 255, 1);
+
+}
+
+.front-panel__bottom-text {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   font-size: 18px;
+}
+
+.fan-speed {
+   margin-bottom: 40px;
+}
+
+.fan-speed__title {
+   display: flex;
+   justify-content: center;
+
+   font-size: 24px;
+   font-weight: 900;
+   color: #fff;
+   padding-bottom: 30px;  
+}
+
+.mode {
+   text-align: center;
+}
+
+.mode__title {
+   font-weight: 900;
+   font-size: 24px;
+   color: #fff;
+   
+}
+
+.mode__wrap {
+   display: flex;
+   justify-content: space-between;
+}
+
+.mode__auto {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 18px;
+}
+
+.mode__auto--title {
+   padding-bottom: 20px;
+}
+
+.full .rs-tooltip {
+   left: 42% !important;
+}
+
+.front-panel__radius-range:after {
+   content: "°C";
+   position: absolute;
+   top: 41%;
+   left: 51%;
+   color: #fff;
+   z-index: 5;
+   font-family: 'Gilroy';
+   font-size: 40px
+}
+.front-panel__radius-range:before {
+   content: "Cooling...";
+   position: absolute;
+   top: 56%;
+   left: 40%;
+   color: #fff;
+   z-index: 5;
+   font-family: 'Lato';
+}

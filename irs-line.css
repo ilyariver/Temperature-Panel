@@ -1,0 +1,71 @@
+.irs-line {
+   box-shadow: inset 0px 3px 3px 3px #000000ed;
+}
+
+.irs--flat .irs-line {
+   height: 7px;
+}
+
+.irs-with-grid .irs-grid {
+   display: none;
+}
+
+.irs--flat .irs-bar {
+   height: 7px;
+   background: linear-gradient(320.66deg, #0172BE 14.75%, #0F9BEE 84.81%);
+   box-shadow: inset 0px 1px 1px 1px rgb(0 0 0 / 87%);
+}
+
+.irs-handle {
+   top: 15px;
+   width: 28px !important;
+   height: 28px !important;
+   background: linear-gradient(320.66deg, #141515 14.75%, #2E3236 84.81% );
+   border-radius: 50%;
+   box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.35);
+}
+.irs-handle:after {
+   content: "";
+
+   position: absolute;
+   top: 1px;
+   bottom: 1px;
+   left: 1px;
+   right: 1px;
+
+   background: linear-gradient(150.66deg, #141515 14.75%, #2E3236 84.81%);
+   border-radius: 50%;
+   z-index: -1;
+   cursor: pointer;
+}
+
+.irs--flat .irs-handle {
+   top: 15px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+   background: linear-gradient(320.66deg, #0172BE 14.75%, #0F9BEE 84.81%);
+   top: 43%;
+   left: 45%;
+   width: 4px;
+   height: 4px;
+   border-radius: 50%;
+  
+}
+
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}
+
+.irs-numbers {
+   display: flex;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-right: 10px;
+
+   background-color: transparent;
+   font-family: Lato;
+   font-size: 14px;
+}
+

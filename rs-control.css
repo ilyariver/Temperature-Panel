@@ -1,0 +1,109 @@
+.front-panel__radius-range {
+   display: flex;
+   justify-content: center;
+   
+   position: relative;
+
+   margin-bottom: 56px;
+}
+
+
+
+.rs-control {
+   display: flex;
+   justify-content: center;
+}
+
+.rs-border {
+   border: none;
+}
+
+.rs-control .rs-range-color {
+   background: conic-gradient(from 90deg at 45.18% 50.04%, #005696 -91.86deg, #11A8FD 41.25deg, #005696 268.14deg, #11A8FD 401.25deg);
+}
+.rs-control .rs-path-color {
+   background: rgba(31, 33, 36, 1);
+
+}
+.rs-control .rs-handle:after {
+   box-shadow: 0px 1px 3px 0px rgba(170, 187, 222, 0.5429) inset;
+
+}
+.rs-control .rs-bg-color {
+   background: linear-gradient(318.21deg, #202428 14.05%, #131314 85.29%);
+   box-shadow: 0px 1px 3px 0px rgb(111 111 111 / 42%) inset;
+}
+.rs-block {
+   position: relative;
+}
+
+.rs-tooltip-text {
+   font-size: 40px;
+   font-weight: 900;
+   font-family: Gilroy;
+   color: #fff;
+}
+.rs-control::after {
+   content: "";
+   position: absolute;
+   top: -10px;
+   bottom: -10px;
+   right: -10px;
+   left: -10px;
+   border-radius: 50%;
+   box-shadow: -20px -20px 20px 7px #6565652b;
+}
+
+.rs-control::before {
+   content: "";
+   position: absolute;
+   background: linear-gradient(318.21deg, #1a1d21 14.05%, #272727 85.29%);
+   border-radius: 50%;
+   top: -10px;
+   bottom: -10px;
+   right: -10px;
+   left: -10px;
+   box-shadow: 20px 20px 20px 16px #00000030;
+}
+
+.rs-move {
+   width: 50px;
+   height: 50px;
+   background: linear-gradient(320.66deg, #141515 14.75%, #2E3236 84.81%);
+}
+
+.rs-handle-dot {
+   position: relative;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 37px;
+   width: 37px;
+   margin: -19px 0px 0px 1px;
+   box-shadow: 1px -4px 20px 7px #00000069;
+   border: 1px solid #1b1717;
+}
+
+.rs-handle-dot::before {
+   content: "";
+   position: absolute;
+   top: -2px;
+   bottom: -2px;
+   right: -2px;
+   left: -2px;
+   border-radius: 50%;
+   background: linear-gradient(320.66deg, #0172BE 14.75%, #0F9BEE 84.81%);
+   z-index: -1;
+
+}
+
+.rs-handle-dot:after {
+   content: "";
+   height: 4px;
+   width: 4px;
+   background: linear-gradient(320.66deg, #0172BE 14.75%, #0F9BEE 84.81%);
+   border-radius: 50px;
+}
+
