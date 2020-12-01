@@ -3,5 +3,5 @@
    font-style: normal;
    font-family: "Gilroy";
    font-display: swap;
-   src: local("Gilroy"), url("../font/Gilroy.woff") format("woff2"), url("../font/Gilroy.woff") format("woff");
+   src: local("Gilroy"), url("./font/Gilroy.woff") format("woff2"), url("./font/Gilroy.woff") format("woff");
  }

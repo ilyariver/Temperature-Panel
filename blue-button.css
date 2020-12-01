@@ -25,7 +25,7 @@
 }
 
 .blue-button--on:after {
-   background-image: url("../img/stand-by.svg");
+   background-image: url("./img/stand-by.svg");
    
    width: 20px;
    height: 20px;
@@ -41,21 +41,21 @@
 }
 
 .blue-button--dry:after {
-   background-image: url("../img/wave-grey.svg");
+   background-image: url("./img/wave-grey.svg");
    
    width: 20px;
    height: 20px;
 }
 
 .blue-button--cool:after {
-   background-image: url("../img/ice.svg");
+   background-image: url("./img/ice.svg");
    
    width: 20px;
    height: 23px;
 }
 
 .blue-button--program:after {
-   background-image: url("../img/time.svg");
+   background-image: url("./img/time.svg");
    
    width: 19px;
    height: 23px;
